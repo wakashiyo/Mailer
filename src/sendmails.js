@@ -25,7 +25,7 @@ const option = function createMailOption(item) {
 const read = function mailinglistRead(json) {
   const items = json;
   var mails = [];
-  var group = [];
+  const group = [];
 
   for (var i = 0; i < items.length; i++) {
     mails.push(option(items[i]));
@@ -41,7 +41,7 @@ const read = function mailinglistRead(json) {
 };
 
 const create = async function createmails(items) {
-  var promisses = [];
+  const promisses = [];
   for (var i = 0; i < items.length; i++) {
     const result = smtp.sendMail(items[i]);
     promisses.push(result);

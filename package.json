@@ -4,16 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "takahiro yoshikawa <aihasayahukoma7@gmail.com> (https://github.com/wakashiyo)",
   "license": "MIT",
   "dependencies": {
+    "ejs": "~4.6.12.6.1",
     "nodemailer": "~4.6.14.7.0"
   },
   "devDependencies": {
+    "@babel/core": "~4.6.17.2.2",
+    "@babel/preset-env": "~4.6.17.3.1",
+    "@babel/register": "~4.6.17.0.0",
+    "babel-preset-es2015": "~4.6.16.24.1",
+    "babel-register": "~4.6.16.26.0",
+    "chai": "~4.6.14.2.0",
     "eslint": "~4.6.15.10.0",
     "eslint-config-airbnb-base": "~4.6.113.1.0",
-    "eslint-plugin-import": "~4.6.12.14.0"
+    "eslint-plugin-import": "~4.6.12.14.0",
+    "intelli-espower-loader": "~4.6.11.0.1",
+    "mocha": "~4.6.15.2.0",
+    "power-assert": "~4.6.11.6.1"
   }
 }
